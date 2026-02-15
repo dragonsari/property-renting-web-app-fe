@@ -43,10 +43,7 @@ export default function PropertyCreateForm({ onSuccess }: { onSuccess: () => voi
     fd.append("description", description.trim());
     fd.append("categoryId", categoryId);
     fd.append("address", address.trim());
-
-    images.forEach((file) => {
-      fd.append("image", file);
-    });
+    fd.append("image", images[0]);
 
     try {
       setLoading(true);

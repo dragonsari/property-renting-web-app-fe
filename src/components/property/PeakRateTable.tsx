@@ -7,9 +7,11 @@ import { useRoomCalendar } from "@/hooks/useRoomCalender";
 export default function PeakRateTable({ 
   roomId,
   refreshKey,
+  onChange,
 }: { 
   roomId: number;
   refreshKey:number;
+  onChange : () => void;
 }) {
   const [peaks, setPeaks] = useState<any[]>([]);
   const { deletePeak } = useRoomCalendar();
@@ -23,6 +25,7 @@ export default function PeakRateTable({
   async function remove(id: number) {
     if (!confirm("Hapus peak rate ini?")) return;
     await deletePeak(id);
+    onChange();
     setPeaks((p) => p.filter((x) => x.id !== id));
   }
 
