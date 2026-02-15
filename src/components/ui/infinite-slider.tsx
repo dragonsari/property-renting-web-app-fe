@@ -12,6 +12,7 @@ export type InfiniteSliderProps = {
   direction?: 'horizontal' | 'vertical';
   reverse?: boolean;
   className?: string;
+  
 };
 
 export function InfiniteSlider({
