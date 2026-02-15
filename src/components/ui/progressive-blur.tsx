@@ -44,6 +44,7 @@ export function ProgressiveBlur({
         const gradient = `linear-gradient(${angle}deg, ${gradientStops.join(
           ', '
         )})`;
+        
 
         return (
           <motion.div
