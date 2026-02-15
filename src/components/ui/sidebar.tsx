@@ -68,7 +68,7 @@ export const Sidebar = ({
       {children}
     </SidebarProvider>
   );
-
+  
 };
 
 export const SidebarBody = (props: React.ComponentProps<typeof motion.div>) => {
