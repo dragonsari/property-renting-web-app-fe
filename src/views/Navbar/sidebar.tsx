@@ -56,20 +56,6 @@ export default function AppSidebar() {
             ))}
           </div>
         </div>
-
-        <SidebarLink
-          link={{
-            label: "Muhammad Ammar",
-            href: "/profile",
-            icon: (
-              <img
-                src="/avatar.png"
-                className="h-7 w-7 rounded-full"
-                alt="avatar"
-              />
-            ),
-          }}
-        />
       </SidebarBody>
     </Sidebar>
   );
